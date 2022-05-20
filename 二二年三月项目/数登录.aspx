@@ -5,15 +5,17 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
+    <title>登录</title>
     <style type="text/css">
         .auto-style1 {
             text-align: center;
         }
         .auto-style2 {
             width: 300px;
+            display: block;
             border: 1px solid #CCCCFF;
-            margin: 0 auto;
+            margin: 20% auto;
+            border-radius: 5%;
         }
         .auto-style3 {
             width: 202px;

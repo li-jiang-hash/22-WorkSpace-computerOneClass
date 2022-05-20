@@ -5,12 +5,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
+    <title>注册</title>
     <style type="text/css">
         .auto-style1 {
             width: 449px;
             height: 210px;
             border: 1px solid #000080;
+            margin: 20% auto;
+            border-radius: 5%;
         }
         .auto-style2 {
             height: 27px;
