@@ -1,0 +1,111 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="mast.master.cs" Inherits="二二年三月项目.mast" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+ <title></title>
+    <link href="StyleSheet.css" type="text/css" rel="Stylesheet" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 215px;
+        }
+        .pp{
+            text-align:center;
+            font-size:16px;
+        }
+    </style> 
+</head>
+   <body style="margin:0;">
+    
+    <form id="form1" runat="server">
+    <div align="center">
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+    </asp:ScriptManager>
+        <table width="914" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+        <td rowspan="10" bgcolor="#DDDDDD">&nbsp;</td>
+        <td height="118" valign="bottom"  
+             style="background-image:url('../../image/biaotitupian.jpg'); width: 776px">
+        <table width="280" height="30" border="0" align="right" cellpadding="0" cellspacing="0">
+        <tr>
+            <td class="daohang1" align="right"><asp:Label ID="labAdmin" runat="server"></asp:Label>！</td>
+          </tr>
+          </table>
+          </td>
+        <td rowspan="10" bgcolor="#DDDDDD" style="width: 68px">&nbsp;</td>
+    </tr>
+    <tr>
+      <td height="26" valign="top" style="width: 776px; background-color: #ffffff;"><table width="777" height="26" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td align="center" bgcolor="#9980D3" class="style1"><span class="daohang1"><asp:Label ID="labDate" runat="server" Font-Size="9pt" ForeColor="Black"></asp:Label>&nbsp;
+            <asp:Label ID="labXQ" runat="server" Font-Size="9pt" ForeColor="Black"></asp:Label></span></td>
+        <td width="588" align="center" bgcolor="#42BAB6" class="daohang1">
+            <asp:Menu ID="Menu1" runat="server" BackColor="#649BED" DynamicHorizontalOffset="2"
+                Font-Names="宋体" Font-Size="9pt" ForeColor="White" Orientation="Horizontal"
+                StaticSubMenuIndent="10px" OnMenuItemClick="Menu1_MenuItemClick">
+                <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                <DynamicHoverStyle BackColor="#666666" ForeColor="White" />
+                <DynamicMenuStyle BackColor="#42BAB6" />
+                <StaticSelectedStyle BackColor="#1C5E55" />
+                <DynamicSelectedStyle BackColor="#1C5E55" />
+                <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                <Items>
+                    <asp:MenuItem Text="首页" Value="首页" NavigateUrl="~/Default.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="图书排行" Value="图书排行">
+                        <asp:MenuItem Text="图书借阅排行" Value="图书借阅排行" NavigateUrl="~/bkjieyuepaihang.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="读者借阅排行" Value="读者借阅排行" 
+                            NavigateUrl="~/readerjieyuepaihang.aspx"></asp:MenuItem>
+                    </asp:MenuItem>
+                    <asp:MenuItem Text="图书借还" Value="图书借还">
+                        <asp:MenuItem Text="图书借阅" Value="图书借阅" NavigateUrl="~/jieshu.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="图书归还" Value="图书归还" NavigateUrl="~/guihuan.aspx"></asp:MenuItem>
+                    </asp:MenuItem>
+                    <asp:MenuItem Text="图书管理" Value="图书管理" NavigateUrl="~/bookguanli.aspx">
+                        <asp:MenuItem Text="图书档案管理" Value="图书档案管理" NavigateUrl="~/bookguanli.aspx"></asp:MenuItem>
+                    </asp:MenuItem>
+                    <asp:MenuItem Text="系统查询" Value="系统查询">
+                        <asp:MenuItem Text="图书档案查询" Value="图书档案查询" NavigateUrl="~/bookquery.aspx"></asp:MenuItem>
+                    </asp:MenuItem>
+                    <asp:MenuItem Text="系统设置" Value="系统设置">
+                        <asp:MenuItem Text="管理员设置" Value="管理员设置" NavigateUrl="~/adminmanage.aspx"></asp:MenuItem>
+                    </asp:MenuItem>
+                    <asp:MenuItem Text="读者管理" Value="读者管理" NavigateUrl="~/readerguanli.aspx">
+                        <asp:MenuItem Text="读者档案管理" Value="读者档案管理" NavigateUrl="~/readerguanli.aspx"></asp:MenuItem>
+                    </asp:MenuItem>
+                   
+                     <asp:MenuItem Text="密码更改" Value="密码更改">
+                        <asp:MenuItem Text="密码更改" Value="密码更改" NavigateUrl="~/chanagepwd.aspx"></asp:MenuItem>
+                    </asp:MenuItem>
+
+                     <asp:MenuItem Text="登录" Value="登录"  NavigateUrl="~/Login.aspx">
+                        <asp:MenuItem Text="退出系统" Value="退出系统" NavigateUrl="~/Login.aspx"></asp:MenuItem>
+                    </asp:MenuItem>
+                </Items>
+                <StaticHoverStyle BackColor="#666666" ForeColor="White" />
+            </asp:Menu>
+            </td>
+        </tr>
+      </table></td>
+    </tr>
+            <tr>
+                <td style="width: 776px; height: 231px; background-color: #ffffff;">
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+            
+        </asp:contentplaceholder>
+                </td>
+            </tr>
+            <tr>
+                <td style="background-color:#59cde9; width: 776px; height: 66px; ">
+                    <p class="pp">
+                      《图书管理系统》@2022
+                    </p>
+                 </td>
+            </tr>
+        </table>
+        </form>
+</body>
+</html>
