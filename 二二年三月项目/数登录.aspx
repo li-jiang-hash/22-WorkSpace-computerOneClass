@@ -13,6 +13,7 @@
         .auto-style2 {
             width: 300px;
             border: 1px solid #CCCCFF;
+            margin: 0 auto;
         }
         .auto-style3 {
             width: 202px;
