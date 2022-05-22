@@ -6,6 +6,7 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Number One</title>
+    <link rel="shortcut icon" href="./image/logo.jpg" type="image/x-icon" />
     <style type="text/css">
         .auto-style1 {
             text-align: center;

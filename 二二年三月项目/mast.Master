@@ -5,6 +5,7 @@
 <html>
 <head runat="server">
  <title></title>
+    <link rel="shortcut icon" href="./image/logo.jpg" type="image/x-icon" />
     <link href="StyleSheet.css" type="text/css" rel="Stylesheet" />
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>

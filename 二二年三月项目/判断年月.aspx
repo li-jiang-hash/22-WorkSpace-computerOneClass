@@ -6,6 +6,7 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>判断年月</title>
+    <link rel="shortcut icon" href="./image/logo.jpg" type="image/x-icon" />
 </head>
 <body>
     <form id="form1" runat="server">
