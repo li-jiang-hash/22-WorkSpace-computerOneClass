@@ -281,7 +281,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Themes\红色\image\" />
-    <Folder Include="style\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

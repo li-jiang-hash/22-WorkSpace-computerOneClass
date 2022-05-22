@@ -22,7 +22,7 @@ Inherits="二二年三月项目.denglu" %>
         border-radius: 5%;
       }
       .auto-style3 {
-        width: 202px;
+        width: 200px;
         height: 50px;
       }
       #Button1 {

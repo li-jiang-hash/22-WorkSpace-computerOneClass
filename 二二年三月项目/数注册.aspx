@@ -10,22 +10,22 @@ Inherits="二二年三月项目.数注册" %>
     <link rel="shortcut icon" href="./image/logo.jpg" type="image/x-icon" />
     <style type="text/css">
       .auto-style1 {
-        width: 449px;
+        width: 300px;
         height: 210px;
-        border: 1px solid #000080;
+        background-color: rgba(187, 255, 186, 0.5);
         margin: 20% auto;
-        border-radius: 5%;
+        border-radius: 10%;
         padding: 20px;
       }
       .auto-style2 {
         height: 27px;
       }
       .auto-style3 {
-        width: 318px;
+        width: 300px;
       }
       .auto-style4 {
         height: 27px;
-        width: 318px;
+        width: 300px;
       }
       #Button1 {
         padding: 5px 10px;
@@ -37,10 +37,10 @@ Inherits="二二年三月项目.数注册" %>
         font-size: 25px;
       }
       tr > td:first-child {
-        width: 120px;
+        width: 100px;
       }
       tr > td:nth-child(2) {
-        background-color: #bfa;
+        width: 200px;
       }
       #Button1 {
         padding: 5px 10px;
@@ -53,6 +53,9 @@ Inherits="二二年三月项目.数注册" %>
         margin-top: 15px;
         border-style: none;
         line-height: 24px;
+      }
+      .text{
+          font-size:12px;
       }
     </style>
   </head>
@@ -95,7 +98,7 @@ Inherits="二二年三月项目.数注册" %>
             </td>
           </tr>
           <tr>
-            <td>确认密码：</td>
+            <td class="text">确认密码：</td>
             <td class="auto-style3">
               <asp:TextBox
                 ID="txtPwd2"
