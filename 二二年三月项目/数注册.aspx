@@ -57,6 +57,7 @@ Inherits="二二年三月项目.数注册" %>
       .text{
           font-size:12px;
       }
+      
     </style>
   </head>
   <body>

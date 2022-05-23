@@ -89,7 +89,7 @@ namespace 二二年三月项目
                 else
                     lblOutput.Text = year + "年不是闰年。";
                 lblOutput.Text += "<br/>" + month + "月份属于" + Season(month) + "。";//判断季节
-                lblOutput.Text += "<br/>" + year + "年" + DaysOfMonth(year, month) + "天。";//判断天数
+                lblOutput.Text += "<br/>" + year + "年" + month + "月" + DaysOfMonth(year, month) + "天。";//判断天数
            
         }
     }
